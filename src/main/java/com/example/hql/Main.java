@@ -28,9 +28,6 @@ public class Main {
         query2.setParameter("x",1);
         query2.executeUpdate();
         System.out.println(query.getResultList());
-        Query query3 = session.createQuery("from Student where id = :x");
-        query3.setParameter("x",5);
-        System.out.println(query3.getSingleResult());
         transaction.commit();
         session.close();
         sessionFactory.close();
