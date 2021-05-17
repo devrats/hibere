@@ -23,12 +23,12 @@ public class Main {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         Patient patient = new Patient();
-        patient.setName("nidhi");
+        patient.setName("");
         patient.setAge(19);
         patient.setBill(15_000);
         patient.setDateOfAdmission(new Date());
         try {
-            FileInputStream fileInputStream = new FileInputStream("D:\\mine\\nidhi.jpg");
+            FileInputStream fileInputStream = new FileInputStream("D:\\mine\\.jpg");
             byte[] image = new byte[fileInputStream.available()];
             fileInputStream.read(image);
             patient.setImage(image);

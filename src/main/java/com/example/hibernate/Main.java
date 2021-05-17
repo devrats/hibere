@@ -22,7 +22,7 @@ public class Main {
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        session.save(new Person(01,"devvrat","B.tech", 853206685,"male"));
+        session.save(new Person(1,"devvrat","B.tech", 853206685,"male"));
         transaction.commit();
         session.close();
     }

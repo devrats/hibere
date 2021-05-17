@@ -12,10 +12,20 @@
         <property name="show_sql">true</property>
         <property name="connection.autocommit">true</property>
         <property name="connection.password"></property>
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
         <property name="format_sql">true</property>
         <mapping class="com.example.hibernate.Person"/>
         <mapping class="com.example.simpleannotation.Patient"/>
         <mapping class="com.example.readingdatabase.Student"/>
         <mapping class="com.example.embadible.Customer"/>
+        <mapping class="com.example.mapping.onetoone.Answer"/>
+        <mapping class="com.example.mapping.onetoone.Question"/>
+        <mapping class="com.example.mapping.onetomany.Mobile"/>
+        <mapping class="com.example.mapping.onetomany.Human"/>
+        <mapping class="com.example.mapping.manytomany.Employee"/>
+        <mapping class="com.example.mapping.manytomany.Project"/>
+        <mapping class="com.example.states.Car"/>
+        <mapping class="com.example.cache.Animal"/>
     </session-factory>
 </hibernate-configuration>
