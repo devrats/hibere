@@ -30,8 +30,8 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+                ", name='" + name +
+                '}' + "\n" ;
     }
 
     @Override
